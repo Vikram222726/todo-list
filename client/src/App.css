@@ -1,0 +1,224 @@
+.todo__wrapper{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #D8D8D8;
+}
+
+.todo__list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 580px;
+    width: 420px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow-y: auto; 
+    padding: 15px;
+}
+
+.todo__header{
+    margin: 10px 10px 30px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todo__notify{
+    color: red;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.todo__input{
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+}
+
+.todo__text{
+    padding: 12px;
+    background-color: #E8E8E8;
+    border: 1px solid #B0B0B0;
+    outline: none;
+    border-radius: 10px;
+}
+
+.todo__save{
+    margin-left: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff661a;
+    border-radius: 16px;
+    border: 2px solid #b33c00;
+    outline: none;
+    cursor: pointer;
+}
+
+.todo__save:hover{
+    font-weight: 600;
+}
+
+.todo__list__items{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.todo__product{
+    display: grid;
+    grid-template-columns: 4fr 3fr 3fr 3fr 1fr;
+    padding: 15px 5px;
+    background-color: rgba(0,0,0,0.1);
+    text-align: left;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: #707070;
+}
+
+.todo__product__short{
+    display: grid;
+    grid-template-columns: 5fr 3fr 3fr 1fr;
+}
+
+.todo__createDate{
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.todo__nocreateDate{
+    display: none;
+}
+
+.todo__name{
+    color: #282828;
+    margin-top: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 4px;
+    padding-left: 6px;
+}
+
+.todo__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo__btn__accept, .todo__btn__reject{
+    height: 20px;
+    width: 20px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 11px;
+    margin-left: 5px;
+    color: #404040;
+    cursor: pointer;
+}
+
+.todo__btn__accept{
+    background-color: #00ff00;
+}
+
+.todo__btn__reject{
+    background-color: #ff3333;
+}
+
+.todo__btn__reject:hover, .todo__btn__accept:hover{
+    font-size: 13px;
+    color: #000;
+}
+
+.todo__btn__accept__small{
+    font-size: 7px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.todo__btn__accept__small:hover{
+    font-size: 8px;
+    color: #000;
+}
+
+.todo__delete{
+    color: #000;
+    width: 22px;
+    height: 26px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo__delete:hover{
+    background-color: #C8C8C8;
+}
+
+@media (max-width: 450px){
+    .todo__list{
+        height: 540px;
+        width: 360px;
+        padding: 8px;
+    }
+    .todo__header{
+        margin: 10px 6px 25px 6px;
+        font-size: 25px;
+    }
+    .todo__notify{
+        font-size: 10px;
+        margin-top: 7px;
+    }
+    .todo__text{
+        font-size: 12px;
+        width: 250px;
+    }
+    .todo__name{
+        font-size: 12px;
+    }
+    .todo__btn__accept, .todo__btn__reject{
+        height: 18px;
+        width: 18px;
+        font-size: 8px;
+    }
+    .todo__btn__accept__small{
+        height: 12px;
+        width: 12px;
+        font-size: 7px;
+        padding-bottom: 2px;
+    }
+    .todo__createDate{
+        font-size: 11px;
+    }
+    .todo__delete{
+        height: 18px;
+        width: 20px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 370px){
+    .todo__list{
+        width: 318px;
+        padding: 5px;
+    }
+    .todo__text{
+        font-size: 11px;
+        width: 220px;
+    }
+}
